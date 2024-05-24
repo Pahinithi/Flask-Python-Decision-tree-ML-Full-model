@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+        <title>Decision tress model </title>
+
+    </head>
+
+<body>
+    <div>
+        <h1> movie interst prediction </h1>
+        <form method="POST" action="/predict">
+            <label for="age"> Age </label>
+            <input type="number" name="age" required>
+            <label for="gender">Gender</label>
+            <input type="text" name="gender" required>
+            <button type="submit"> Predict </button>
+
+        </form>
+        {% if prediction %}
+        <p> prediction of Movie interst: {{prediction }} </p>
+        {% endif %}
+    </div>
+</body>
+
+</html>
